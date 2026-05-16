@@ -6,7 +6,7 @@
  */
 
 (function () {
-  const RENDER_URL = 'https://techstore-backend-a4e2.onrender.com/api';
+  const RENDER_URL = 'https://gravitytech-production.up.railway.app/api';
   const LOCAL_URL  = 'http://localhost:3000/api';
 
   const isLocal =
