@@ -1,9 +1,8 @@
 const { Pool } = require('pg');
 
 const pool = new Pool({
-  connectionString: process.env.DB_URL,
+  connectionString: process.env.DB_URL || process.env.DATABASE_URL,
 });
-
 pool.on('connect', (client) => {
   client.query("SET search_path TO ecommerce, public");
   console.log('[OK] Conectado a PostgreSQL');
